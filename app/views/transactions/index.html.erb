@@ -1,14 +1,13 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Transactions</h1>
 
-<div id="transactions">
+<div id="transactions" class="mt-8 mb-4">
   <% @transactions.each do |transaction| %>
     <%= render transaction %>
-    <p>
-      <%= link_to "Show this transaction", transaction %>
+    <p class="m-4">
+      <%= link_to "Show this transaction", transaction, class: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-8" %>
     </p>
   <% end %>
 </div>
 
-<%= link_to "New transaction", new_transaction_path %>
+<%= link_to "New transaction", new_transaction_path, class: "bg-green-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4" %>
