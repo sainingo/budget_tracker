@@ -1,0 +1,6 @@
+<h1>Categorys#show</h1>
+<p>Find me in app/views/categorys/show.html.erb</p>
+<h3><%= @category.name%></h3>
+<p><%= @category.icon%></p>
+<%= link_to "Edit", edit_category_path(@category.id) %>
+<%= link_to "Back", categorys_path %>
