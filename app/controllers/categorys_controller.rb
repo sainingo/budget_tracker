@@ -4,7 +4,7 @@ class CategorysController < ApplicationController
     if user_signed_in?
       @category = Category.all
       @total_category_transactions = Category.includes(:transactions).where(user_id: current_user.id).sum(:amount)
-      @transactions = Category.includes(:transactions).where(:id => :category_id).sum(:amount)
+      @transactions = Category.includes(:transactions).where(id: :category_id).sum(:amount)
     else
       render '/splash/welcome'
     end
