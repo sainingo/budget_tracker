@@ -5,10 +5,7 @@
 
 ## Preview
 
-
-
-
-3d8b9c77061122) to get up to speed with how the app works. 
+## [Video Demo Link](https://www.loom.com/share/d61e8c6e45f94437b25aa2985e77d8e4)
 
 ## Live Link
 
