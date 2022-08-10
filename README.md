@@ -12,7 +12,7 @@
 
 ## Live Link
 
-- Visit this [live link](https://rails-mint.herokuapp.com/) to interact with the web app before cloning it.
+- Visit this [live link](https://budgetr-tracker.herokuapp.com) to interact with the web app before cloning it.
 
 
 ## Built With
