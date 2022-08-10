@@ -6,7 +6,7 @@ class CategorysController < ApplicationController
 
   def show
     @category = Category.find(params[:id])
-    @transactions = Transaction.where(:category_id => params[:id])
+    @transactions = Transaction.where(category_id: params[:id])
     @total_transactions = @transactions.sum(:amount)
     @total_category_transactions = Category.includes(:transactions).where(user: current_user).sum(:amount)
   end
