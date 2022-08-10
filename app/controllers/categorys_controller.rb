@@ -2,12 +2,12 @@ class CategorysController < ApplicationController
   before_action :authenticate_user!, except: :index
   def index
     if user_signed_in?
-    @category = Category.all
-    @total_category_transactions = Category.includes(:transactions).where(user_id: current_user.id).sum(:amount)
-    @total_each_category = Category.includes(:transactions).sum(:amount)
+      @category = Category.all
+      @total_category_transactions = Category.includes(:transactions).where(user_id: current_user.id).sum(:amount)
+      @transactions = Category.includes(:transactions).where(:id => :category_id).sum(:amount)
     else
-    render '/splash/welcome'
-  end
+      render '/splash/welcome'
+    end
   end
 
   def show
