@@ -46,11 +46,13 @@ To get a local copy up and running follow these simple example steps.
 
 ## Author
 
-👤 **Ben Kiarie**
-
-- GitHub: [Ben Kiarie](https://github.com/Benmuiruri) - Follow me on Github, browse my projects, and leave a star for any project you like.
-- Twitter: [Optimize](https://twitter.com/_optimize) - Follow me on Twitter I will make your Timeline a bit more interesting
-- LinkedIn: [Ben Kiarie](https://www.linkedin.com/in/benjamin-kiarie-180b66149/) - Connect with me on LinkedIn and help each other grow professionally
+<a href="https://github.com/sainingo" target="blank"><img align="center"
+      src="https://avatars.githubusercontent.com/u/32932447?s=40&v=4"
+      alt="adampithewan" height="50" width="50"/></a> **SANINGO**
+      
+- GitHub: [@sainingo](https://github.com/sainingo)
+- Twitter: [@sainingo](https://www.linkedin.com/in/sainingo/)
+- LinkedIn: [sainingo](https://twitter.com/saningoInn)
 
 ## 🤝 Contributing
 
