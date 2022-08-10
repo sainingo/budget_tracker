@@ -62,5 +62,6 @@ Feel free to check the [issues page](https://github.com/Benmuiruri/budget_tracke
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
+credit to the author [Gregoire Vella on Behance](https://www.behance.net/gregoirevella). for the design.
 Hat tip to anyone whose code inspired our project
   
