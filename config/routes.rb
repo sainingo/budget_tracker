@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users
-  resources :transactions
-  resources :categorys
+ 
+  resources :categorys do
+    resources :transactions
+  end
 
   root "categorys#index"
 end

@@ -1,6 +1,9 @@
-<h1>Categorys#show</h1>
-<p>Find me in app/views/categorys/show.html.erb</p>
-<h3><%= @category.name%></h3>
-<p><%= @category.icon%></p>
-<%= link_to "Edit", edit_category_path(@category.id) %>
-<%= link_to "Back", categorys_path %>
+<div class="border border-slate-200 p-8">
+ <h3 class="text-4xl mb-4" >Great job. You have tracked $<%= @total_transactions%> of category 2</h3>
+<img class="w-[40%] h-[10%]" src="<%= @category.icon%>" alt="...">
+<h3 class="text-2xl m-2"><%= @category.name%></h3>
+<div class="grid w-[30%]">
+<%= link_to "Back", categorys_path, class: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-4" %>
+<%= link_to "Add Transaction", new_category_transaction_path(@category), class: "bg-green-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" %>
+</div>
+</div>

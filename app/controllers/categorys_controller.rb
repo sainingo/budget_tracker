@@ -1,10 +1,14 @@
 class CategorysController < ApplicationController
   def index
     @category = Category.all
+    @total_category_transactions = Category.includes(:transactions).where(user_id: current_user.id).sum(:amount)
   end
 
   def show
     @category = Category.find(params[:id])
+    @transactions = Transaction.where(:category_id => params[:id])
+    @total_transactions = @transactions.sum(:amount)
+    @total_category_transactions = Category.includes(:transactions).where(user: current_user).sum(:amount)
   end
 
   def new
@@ -13,6 +17,7 @@ class CategorysController < ApplicationController
 
   def create
     @category = Category.create(category_params)
+    @category.user = current_user
 
     if @category.save
       redirect_to @category
